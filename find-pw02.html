@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>한우</title>
+        <link href="css/style.css" rel="stylesheet">
+        <!-- javaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/background.cycle.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+
+    <body class="member">
+
+        <div id="content" >
+
+            <article class="find-tab">
+                <a href="">아이디 찾기</a>
+                <a href="#" class="active">비밀번호 찾기</a>
+            </article>
+            
+            <section class="find">
+
+                <p class="attention">가입 당시의 입력된 휴대폰 번호로 문자메시지를 발송합니다.</p>
+
+                <fieldset class="input-field">
+                <dl>
+                        <dt>
+                            <label for="name">성명</label>
+                        </dt>
+                        <dd>
+                            <input id="name" type="text" placeholder="이름을 입력하세요" value="홍길동">
+                        </dd>
+                        <dt>
+                            <label for="phone">휴대폰번호</label>
+                        </dt>
+                        <dd>
+                            <input id="phone" class="phone" type="text" placeholder="숫자만입력">
+                            <button class="size-phone re">인증번호 재전송</button>
+
+                            <div class="phone-input timer">
+                                <label class="h3" for="phone-txt">인증번호 </label>
+                                <input id="phone-txt" class="phone-txt" type="text" placeholder="">
+                                <span class="box">인증완료</span>
+                            </div>
+                                
+                            <span class="info">* 인증이 완료되었습니다. 사용하실 비밀번호를 입력해주세요</span>
+                        </dd>
+                        <dt>
+                            <label for="pw">비밀번호</label>
+                        </dt>
+                        <dd>
+                            <input id="pw" type="text" placeholder="사용하실 6자리 숫자를 입력하세요">
+                        </dd>
+                        <dt>
+                            <label for="pw-re">비밀번호 확인</label>
+                        </dt>
+                        <dd>
+                            <input id="pw-re" type="text" placeholder="사용하실 비밀번호를 다시 한번 입력하세요">
+                            <span class="info">* 비밀번호 확인 후, 하단의 변경 버튼을 눌러주세요</span>
+                        </dd>
+
+
+                    </dl>
+
+                    <button class="check-ok">
+                        변경
+                    </button>
+                </fieldset>
+
+            </section>
+            
+            <article class="btn-set">
+                <a href="">처음으로</a>
+
+
+            </article>
+        </div>
+
+    </body>
+
+</html>

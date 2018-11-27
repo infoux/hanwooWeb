@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>한우</title>
+        <link href="css/style.css" rel="stylesheet">
+        <!-- javaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/background.cycle.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+
+    <body class="member">
+
+        <div id="content" >
+
+            <section class="member-step">
+                <h1>
+                    <small>수정사</small>
+                    회원가입
+                </h1>
+
+                <ul class="step">
+                    <li>1.약관동의</li>
+                    <li class="active">2.신청서작성</li>
+                    <li>3.신청완료</li>
+                </ul>
+
+                <p class="info-text">
+                    회원가입신청 정보를 입력해주세요.
+                </p>
+            </section>
+            
+            <section class="form">
+                <h2>
+                    <small>2단계.</small>
+                    회원가입 신청서 작성
+
+                    <span>
+                        <i class="icon-ok"></i>는 필수입력항목입니다.
+                    </span>
+                </h2>
+
+                <fieldset class="input-field">
+                    <legend class="sr-only">약관동의 체크박스</legend>
+
+                    <dl>
+                        <dt>
+                            <label for="name"><i class="icon-ok"></i>성명</label>
+                        </dt>
+                        <dd>
+                            <input id="name" type="text" placeholder="이름을 입력하세요" value="홍길동">
+                        </dd>
+                        <dt>
+                            <label for="id"><i class="icon-ok"></i>아이디</label>
+                        </dt>
+                        <dd>
+                            <input id="id" class="box" type="text" placeholder="사용하실 숫자 6자리를 입력하세요">
+                            <span class="box">사용하실 수 있습니다</span>
+                        </dd>
+                        <dt>
+                            <i class="icon-ok"></i>구분
+                        </dt>
+                        <dd>
+                            <input id="type01" name="type" type="radio" checked>
+                            <label for="type01" class="tab" name="type">일반</label>
+                            <input id="type02" name="type" type="radio" checked>
+                            <label for="type02" class="tab" name="type">자가</label>
+                        </dd>
+                        <dt>
+                            <label for="num">농장식별번호</label>
+                        </dt>
+                        <dd>
+                            <input id="num" class="num" type="text" placeholder="사용하실 숫자 6자리를 입력하세요">
+                            <button class="size-num">확인</button>
+                        </dd>
+                        <dt>
+                            <label for="phone"><i class="icon-ok"></i>휴대폰번호</label>
+                        </dt>
+                        <dd>
+                            <input id="phone" class="phone" type="text" placeholder="숫자만입력">
+                            <button class="size-phone">인증번호전송</button>
+                            <div class="phone-input">
+                                <label class="h3" for="phone-txt">인증번호</label>
+                                <input id="phone-txt" class="phone-txt" type="text" placeholder="전송받으신 인증번호를 입력하세요">
+                            </div>
+                        </dd>
+                        <dt>
+                            <label for="license-num">면허번호</label>
+                        </dt>
+                        <dd>
+                            <input id="license-num" type="text" placeholder="수정사 면허번호를 입력하세요">
+                        </dd>
+                        <dt>
+                            <label for="license">면허증</label>
+                        </dt>
+                        <dd>
+                            <button class="size-license">첨부</button>
+                            <u class="filename">파일명</u>
+                            <button class="delete"><i class="icon-trash"></i>삭제</button>
+                            <span class="info">* 최대5 MB / 등록가능포맷 jpg,gif,png,bmp, pdf</span>
+                        </dd>
+                        <dt>
+                            <label for="mail">이메일</label>
+                        </dt>
+                        <dd>
+                            <input id="mail" class="mail" type="text">
+                            <select class="mail-option">
+                                <option>직접입력</option>
+                            </select>
+                        </dd>
+                        <dt>
+                            <label for="area">주요지역선택<i class="icon-ok"></i></label>
+                        </dt>
+                        <dd>
+                            <select id="area" class="area">
+                                <option>시도</option>
+                            </select>
+                        </dd>
+                        <dt>
+                            <label for="addr">주소</label>
+                        </dt>
+                        <dd>
+                            <button class="size-addr">주소찾기</button>
+                            <input id="addr" class="addr" type="text">
+                            <input id="addr2" class="addr2" type="text" placeholder="상세주소입력">
+                        </dd>
+
+                    </dl>
+                </fieldset>
+
+
+
+            </section>
+            
+            <article class="btn-set">
+                <a href="">처음으로</a>
+                <a class="main" href="">회원가입</a>
+
+
+            </article>
+        </div>
+
+    </body>
+
+</html>
